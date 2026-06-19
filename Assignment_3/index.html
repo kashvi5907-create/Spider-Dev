@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shaadi.com</title>
+</head>
+<body>
+    <h1>Shaadi.com Registration Form</h1>
+    <hr>
+    <div class="registration">
+        <form action="index.php" method="post">
+            <h2>Basic Details</h2>
+            <label for="first_name"><b>Enter your first name :</b></label>
+            <input type="text" id="first_name" placeholder="JATIN" required><br>
+
+            <label for="second_name"><b>Enter your second name :</b></label>
+            <input type="text" id="second_name" placeholder="KUMAR" required><br>
+
+            <label for="phone"><b>Enter your phone number :</b></label>
+            <input type="tel" name="phone" id="phone" placeholder="987XXXXXXX" pattern="[0-9]{10}" required><br>
+
+            <label for="email"><b>Enter your Email address :</b></label>
+            <input type="email" name="email" id="email" placeholder="jatin@gmail.com" required><br>
+
+            <label for="bday"><b>Enter your Birth Date :</b></label>
+            <input type="date" name="bday" id="bday"><br>
+
+            <label for="profile_pic"><b>Upload Profile Picture :</b></label>
+            <input type="file" id="profile_pic" accept="image/png, image/jpeg"><br>
+
+            <b>Looking For :</b>
+            <input type="radio" name="looking_for" id="bride">
+            <label for="bride">Bride</label>
+
+            <input type="radio" name="looking_for" id="groom">
+            <label for="bride">Groom</label><br>
+
+            <label for="age"><b>Age :</b></label>
+            <input type="number" name="age" id="age" min="21" max="70" required><br>
+
+            <label for="height"><b>Height :</b></label>
+            <input type="number" name="height" id="height" min="0" placeholder="in cm" required><br>
+
+            <label for="martial_status"><b>Martial Status :</b></label>
+            <select id="martial_status">
+                <option value="Doesn't Matter">Doesn't Matter</option>
+                <option value="Married">Married</option>
+                <option value="Unmarried">Unmarried</option>
+            </select><br>
+
+            <b>Have Children :</b>
+            <input type="radio" name="children" id="do_not_matter">
+            <label for="do_not_matter">Doesn't Matter</label>
+
+            <input type="radio" name="children" id="no">
+            <label for="no">No</label>
+
+            <input type="radio" name="children" id="ok">
+            <label for="ok">Ok, if not staying together</label><br>
+
+            <label for="religion"><b>Religion :</b></label>
+            <select id="religion">
+                <option value="Hinduism">Hinduism</option>
+                <option value="Buddhism">Buddhism</option>
+                <option value="Sikhism">Sikhism</option>
+                <option value="Jainism">Jainism</option>
+                <option value="Christianity">Christianity</option>
+                <option value="Islam">Islam</option>
+            </select><br>
+
+            <label for="mother_tongue"><b>Mother Tongue :</b></label>
+            <select id="mother_tongue">
+                <option value="Hindi">Hindi</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Odia">Odia</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Assamese">Assamese</option>
+            </select>
+
+            <h2>Location & Grew up in Details</h2>
+            <label for="country"><b>Country Living in :</b></label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="United States">United States</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Russia">Russia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Japan">Japan</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Iran">Iran</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Germany">Germany</option>
+                <option value="Thailand">Thailand</option>
+            </select><br>
+
+            <label for="country"><b>Country Grew up in :</b></label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="United States">United States</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Russia">Russia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Japan">Japan</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Iran">Iran</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Germany">Germany</option>
+                <option value="Thailand">Thailand</option>
+            </select><br>
+
+            <label for="state"><b>State Living in:</b></label>
+            <select id="state">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Assam">Assam</option>
+                <option value="Maharashtra">Maharashtra</option>
+            </select><br>
+
+            <label for="city"><b>City Living in :</b></label>
+            <select id="city">
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Surat">Surat</option>
+                <option value="Pune">Pune</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Thane">Thane</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Patna">Patna</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Agra">Agra</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Faridabad">Faridabad</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Srinagar">Srinagar</option>
+                <option value="Aurangabad">Aurangabad</option>
+                <option value="Dhanbad">Dhanbad</option>
+                <option value="Amritsar">Amritsar</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Prayagraj">Prayagraj</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Jabalpur">Jabalpur</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Jodhpur">Jodhpur</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Raipur">Raipur</option>
+                <option value="Kota">Kota</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Solapur">Solapur</option>
+            </select><br>
+
+            <h2>Education and Professional Details</h2>
+            <label for="working_with"><b>Working With :</b></label>
+            <select id="working_with">
+                <option value="Doesn't matter">Doesn't matter</option>
+                <option value="Private Sector">Private Sector</option>
+                <option value="Government / Public Sector">Government / Public Sector</option>
+                <option value="Defense / Civil Services">Defense / Civil Services</option>
+                <option value="Business / Self-Employed">Business / Self-Employed</option>
+                <option value="Non-Profit / NGO">Non-Profit / NGO</option>
+                <option value="Not Working / Homemaker">Not Working / Homemaker</option>
+            </select><br>
+
+            <label for="Professional"><b>Professional Area :</b></label>
+            <select id="Professional">
+                <option value="IT & Engineering">IT & Engineering</option>
+                <option value="Medical & Healthcare">Medical & Healthcare</option>
+                <option value="Finance & Corporate">Finance & Corporate</option>
+                <option value="Legal & Civil Services">Legal & Civil Services</option>
+                <option value="Creative & Media">Creative & Media</option>
+                <option value="Education & Academia">Education & Academia</option>
+                <option value="Hospitality & Aviation">Hospitality & Aviation</option>
+            </select><br>
+
+            <label for="income"><b>Annual Income :</b></label>
+            <input type="number" id="income"><br>
+
+            <h2>Lifestyle & Appearance</h2>
+            <b>Diet :</b>
+            <input type="radio" name="diet" id="dont_matter">
+            <label for="dont_matter">Doesn't Matter</label>
+
+            <input type="radio" name="diet" id="veg">
+            <label for="veg">Veg</label>
+
+            <input type="radio" name="diet" id="non_veg">
+            <label for="non_veg">Non Veg</label>
+
+            <input type="radio" name="diet" id="jain">
+            <label for="jain">Jain</label>
+            <br>
+
+            <b>Smoke :</b>
+            <input type="radio" name="smoke" id="smoke_yes">
+            <label for="smoke_yes">Yes</label>
+            <input type="radio" name="smoke" id="smoke_no">
+            <label for="smoke_no">No</label>
+            <br>
+
+            <b>Drink :</b>
+            <input type="radio" name="smoke" id="drink_yes">
+            <label for="drink_yes">Yes</label>
+            <input type="radio" name="smoke" id="drink_no">
+            <label for="drink_no">No</label>
+            <br>
+
+            <b>Body Type :</b>
+            <input type="radio" name="body_type" id="skim">
+            <label for="skim">Skim</label>
+            <input type="radio" name="body_type" id="average">
+            <label for="average">Average</label>
+            <input type="radio" name="body_type" id="heavy">
+            <label for="heavy">Heavy</label>
+            <br>
+
+            <b>Skin Tone :</b>
+            <input type="radio" name="skin_type" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="skin_type" id="wheatish">
+            <label for="wheatish">Wheatish</label>
+            <input type="radio" name="skin_type" id="dark">
+            <label for="dark">Dark</label>
+            <br>
+
+            <h2>Search using Keyword</h2>
+            <p>
+                For specific search results, filter your search using keywords :
+                <input type="search" name="search" id="search">
+            </p>
+
+            <b>Photo Settings :</b>
+            <input type="radio" name="photo_settings" id="visible">
+            <label for="visible">Visible to All</label>
+
+            <input type="radio" name="photo_settings" id="protected">
+            <label for="protected">Protected Photo</label>
+            <br>
+
+            <b>Profile Created by :</b>
+            <input type="radio" name="profile_created" id="self">
+            <label for="self">Self</label>
+
+            <input type="radio" name="profile_created" id="guardian">
+            <label for="guardian">Guardian</label>
+
+            <input type="radio" name="profile_created" id="others">
+            <label for="others">Sibling / Friend / Others</label>
+            <br>
+
+            <b>Do not show :</b>
+            <input type="radio" name="do_not_show" id="filtered">
+            <label for="filtered">Profiles that have filtered me out</label>
+
+            <input type="radio" name="do_not_show" id="viewed">
+            <label for="viewed">Profiles that I have already viewed</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
